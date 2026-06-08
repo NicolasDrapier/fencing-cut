@@ -5,6 +5,13 @@ panning (panoramic) camera. The tool finds where each touch (point) starts and
 ends, produces a diagnostic plot and a CSV of cut points, and can optionally
 slice the source video into one clip per touch.
 
+## Example
+
+The diagnostic plot shows the compensated fencer motion and the camera panning
+speed over time, the high/low thresholds, and each detected touch highlighted:
+
+![Example plot of detected touches](assets/example_plot.png)
+
 ## How it works
 
 The hard part is that the camera is moving, so naive frame-differencing would
